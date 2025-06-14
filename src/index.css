@@ -1,0 +1,155 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Luxury Real Estate Design System */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 15%;
+
+    --primary: 220 50% 12%;
+    --primary-foreground: 45 20% 95%;
+
+    --secondary: 45 20% 95%;
+    --secondary-foreground: 220 50% 12%;
+
+    --muted: 45 10% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 45 30% 88%;
+    --accent-foreground: 220 50% 12%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 45 15% 90%;
+    --input: 45 15% 90%;
+    --ring: 220 50% 12%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Luxury Color Palette */
+    --luxury-navy: 220 50% 12%;
+    --luxury-cream: 45 20% 95%;
+    --luxury-gold: 45 85% 60%;
+    --luxury-charcoal: 220 15% 15%;
+    --luxury-champagne: 45 30% 88%;
+  }
+
+  .dark {
+    --background: 220 50% 12%;
+    --foreground: 45 20% 95%;
+
+    --card: 220 50% 12%;
+    --card-foreground: 45 20% 95%;
+
+    --popover: 220 50% 12%;
+    --popover-foreground: 45 20% 95%;
+
+    --primary: 45 20% 95%;
+    --primary-foreground: 220 50% 12%;
+
+    --secondary: 220 30% 20%;
+    --secondary-foreground: 45 20% 95%;
+
+    --muted: 220 30% 20%;
+    --muted-foreground: 45 10% 70%;
+
+    --accent: 220 30% 20%;
+    --accent-foreground: 45 20% 95%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 30% 20%;
+    --input: 220 30% 20%;
+    --ring: 45 85% 60%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Luxury Colors - Dark Mode */
+    --luxury-navy: 220 50% 12%;
+    --luxury-cream: 45 20% 95%;
+    --luxury-gold: 45 85% 60%;
+    --luxury-charcoal: 220 15% 15%;
+    --luxury-champagne: 45 30% 88%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+@layer components {
+  .luxury-gradient {
+    background: linear-gradient(135deg, hsl(var(--luxury-navy)) 0%, hsl(var(--luxury-charcoal)) 100%);
+  }
+
+  .luxury-text-gradient {
+    background: linear-gradient(135deg, hsl(var(--luxury-gold)) 0%, hsl(var(--luxury-champagne)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .luxury-hover {
+    @apply transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl;
+  }
+
+  .luxury-border {
+    border-image: linear-gradient(90deg, hsl(var(--luxury-gold)), transparent) 1;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--luxury-cream));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--luxury-gold));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--luxury-navy));
+}
