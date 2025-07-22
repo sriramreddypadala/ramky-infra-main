@@ -7,6 +7,8 @@ import { X, ArrowLeft, MapPin, Home, Leaf, Car, FileText, Play, Phone } from 'lu
 import Footer from '@/components/Footer';
 import PlotInfo from '@/components/PlotInfo';
 import { getAssetPath } from '@/utils/assetUtils';
+import brindavanam from '@/assets/DJI_0188.jpg';
+import villa from '@/assets/villa.jpg';
 
 interface Project {
   id: number;
@@ -29,7 +31,7 @@ const projects = [
     id: 1,
     name: 'Brindavanam',
     tagline: 'Gated Community with Open Plots & Villas',
-    image: getAssetPath('/src/assets/DJI_0188.JPG'),
+    image: getAssetPath(brindavanam),
     description: 'Welcome to Brindavanam Gated Community, where nature meets luxury. Nestled amidst lush greenery, our gated community features a range of open plots and villas designed to provide you with the perfect blend of tranquility and modern amenities.',
     highlights: [
       'Premium open plots in a gated community',
@@ -66,7 +68,7 @@ const projects = [
     id: 2,
     name: 'Ramky Villa',
     tagline: 'EcoLife Community',
-    image: getAssetPath('/src/assets/villa.JPG'),
+    image: getAssetPath(villa),
     description: 'A thoughtfully designed gated villa enclave that brings together luxury living and sustainable lifestyle. Set in a serene, green environment, this community is where your dream of eco-conscious, premium living becomes reality.',
     highlights: [
       'Premium gated villa community on 10 acres',

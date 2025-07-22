@@ -4,6 +4,8 @@ import { Home, Phone, Mail, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useLocation } from 'react-router-dom';
 import { getAssetPath } from '@/utils/assetUtils';
+import logo from '@/assets/home/images/ramky logo 2.png';
+
 
 // Animation variants for framer-motion
 const containerVariants = {
@@ -100,7 +102,7 @@ const Header = () => {
           <div className="flex-shrink-0">
             <Link to="/" className="block h-12 md:h-14 transition-transform duration-300 hover:scale-105">
               <img 
-                src={getAssetPath('/src/assets/ramky logo 2.png')} 
+                src={logo} 
                 alt="Ramky Infra & Developers" 
                 className="h-full w-auto object-contain"
                 onError={(e) => {
@@ -198,7 +200,7 @@ const Header = () => {
               <div className="p-4 border-b border-gray-100 dark:border-gray-800 flex items-center justify-between">
                 <Link to="/" className="block h-10" onClick={() => setIsMenuOpen(false)}>
                   <img 
-                    src={getAssetPath('/src/assets/ramky logo 2.png')} 
+                    src={logo} 
                     alt="Ramky Infra & Developers" 
                     className="h-full w-auto object-contain"
                     onError={(e) => {

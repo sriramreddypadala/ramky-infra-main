@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-
+import aboutHero from '@/assets/about-hero.jpg';
 const About = () => {
   const stats = [
     { value: '15+', label: 'Years Experience' },
@@ -55,7 +55,7 @@ const About = () => {
           <div className="relative">
             <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/images/about-hero.jpg"
+                src={aboutHero}
                 alt="Ramky Infra Development - Sustainable and Nature-Integrated Real Estate"
                 className="w-full h-full object-cover"
               />

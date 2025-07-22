@@ -2,19 +2,26 @@ import { useState, useRef, useEffect } from 'react';
 import { Play, Pause, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import galleryImage1 from '@/assets/gallerymedia/images/DJI_0176.jpg';
+import galleryImage2 from '@/assets/gallerymedia/images/DJI_0178 (1).jpg';
+import galleryImage3 from '@/assets/gallerymedia/images/DJI_0203.jpg';
+import galleryVideo1 from '@/assets/gallerymedia/videos/Dji 0714.mp4';
+import galleryVideo2 from '@/assets/gallerymedia/videos/Dji 0718.mp4';
+import galleryVideo3 from '@/assets/gallerymedia/videos/Dji 0731.mp4';
+import galleryVideo4 from '@/assets/gallerymedia/videos/Dji 0741 (1).mp4';
 
 // Image and video files from the public directory
 const imageFiles = [
-  '/gallery/images/DJI_0176.JPG',
-  '/gallery/images/DJI_0178 (1).JPG',
-  '/gallery/images/DJI_0203.JPG'
+  galleryImage1,
+  galleryImage2,
+  galleryImage3
 ];
 
 const videoFiles = [
-  '/gallery/videos/Dji 0714.mp4',
-  '/gallery/videos/Dji 0718.mp4',
-  '/gallery/videos/Dji 0731.mp4',
-  '/gallery/videos/Dji 0741 (1).mp4'
+  galleryVideo1,
+  galleryVideo2,
+  galleryVideo3,
+  galleryVideo4
 ];
 
 type MediaItem = {

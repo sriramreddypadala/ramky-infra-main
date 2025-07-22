@@ -4,7 +4,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { MapPin, ArrowRight, FileText } from 'lucide-react';
-
+import brindavanam from '@/assets/DJI_0188.jpg';
+import villa from '@/assets/villa.jpg';
 interface Project {
   id: number;
   name: string;
@@ -25,7 +26,7 @@ const Projects = () => {
       id: 1,
       name: 'Brindavanam',
       tagline: 'Gated Community with Open Plots & Villas',
-      image: '/src/assets/DJI_0188.JPG',
+      image: brindavanam,
       description: 'Welcome to Brindavanam Gated Community, where nature meets luxury. Nestled amidst lush greenery, our gated community features a range of open plots and villas designed to provide you with the perfect blend of tranquility and modern amenities.',
       highlights: [
         'Premium open plots in a gated community',
@@ -55,7 +56,7 @@ const Projects = () => {
       id: 2,
       name: 'Ramky Villa',
       tagline: 'EcoLife Community',
-      image: '/src/assets/villa.JPG',
+      image: villa,
       description: 'A thoughtfully designed gated villa enclave that brings together luxury living and sustainable lifestyle. Set in a serene, green environment, this community is where your dream of eco-conscious, premium living becomes reality.',
       highlights: [
         'Premium gated villa community on 10 acres',
